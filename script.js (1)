@@ -1,0 +1,79 @@
+const quotes = [
+    "La vie est ce que vous en faites.",
+    "Le succès est la somme de petits efforts répétés jour après jour.",
+    "Ne rêvez pas votre vie, vivez vos rêves.",
+    "La persévérance est la clé du succès.",
+    "Chaque jour est une nouvelle opportunité.",
+     "La vie est ce que vous en faites.",
+"Le succès est la somme de petits efforts répétés jour après jour.",
+"Ne rêvez pas votre vie, vivez vos rêves.",
+"La persévérance est la clé du succès.",
+      
+    
+    
+    "Le bonheur n’est pas d’avoir tout ce que l’on désire, mais d’aimer ce que l’on a." ,
+"La vie est un mystère qu’il faut vivre, et non un problème à résoudre." ,
+"Le succès n’est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez." ,
+"La vie est un défi à relever, un bonheur à mériter, une aventure à tenter." ,
+"Le bonheur est la seule chose qui se double si on le partage." ,
+"La vie est trop courte pour la passer à regretter tout ce que nous n’avons pas eu le courage de tenter." ,
+  "Le succès, c’est de se lever une fois de plus qu’on est tombé." ,
+  "La vie est faite de choix : oui ou non ; continuer ou abandonner ; se réveiller ou rêver." ,
+  "Le bonheur n’est pas d’avoir tout ce que l’on désire, mais d’aimer ce que l’on a." ,
+  "La vie est un mystère qu’il faut vivre, et non un problème à résoudre.",
+    
+    
+    
+    
+    
+    
+];
+
+function generateQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById('quote').innerText = quotes[randomIndex];
+}
+function copyQuote() {
+    const quoteText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(quoteText).then(() => {
+        alert('Citation copiée dans le presse-papiers!');
+    }).catch(err => {
+        console.error('Erreur lors de la copie de la citation : ', err);
+    });
+}
+
+function copyQuote() {
+    const quoteText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(quoteText).then(() => {
+        alert('Citation copiée dans le presse-papiers!');
+    }).catch(err => {
+        console.error('Erreur lors de la copie de la citation : ', err);
+    });
+}
+
+function toggleInfo() {
+    const info = document.getElementById('info');
+    if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+    } else {
+        info.style.display = 'none';
+    }
+}
+function copyQuote() {
+    const quoteText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(quoteText).then(() => {
+        alert('Citation copiée dans le presse-papiers!');
+    }).catch(err => {
+        console.error('Erreur lors de la copie de la citation : ', err);
+    });
+}
+
+function toggleMenu(x) {
+    x.classList.toggle("change");
+    const info = document.getElementById('info');
+    if (info.style.display === 'none' || info.style.display === '') {
+        info.style.display = 'block';
+    } else {
+        info.style.display = 'none';
+    }
+}
